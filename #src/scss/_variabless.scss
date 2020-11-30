@@ -1,0 +1,142 @@
+@mixin fonts ($size, $weight, $color, $text-transform) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    text-transform: $text-transform;
+    font-family: 'PT Sans', sans-serif;
+}
+
+@mixin title-h1 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 6rem;
+    font-weight: bold;
+    color: $pallete-primary;
+    text-transform: uppercase;
+    text-shadow: 0 4px 4 rgba(0, 0, 0, 0.25);
+
+    @media (max-width: 1140px) {
+        font-size: 4.5rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 2.5rem;
+    }
+}
+
+@mixin title-h2 {
+    font-family: 'PT Sans', sans-serif;
+    color: $pallete-fonts;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 21.6px;    
+
+    @media (max-width: 1140px) {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 1.5rem;
+        line-height: 1.95rem;
+    }
+}
+
+@mixin title-h3 {
+    font-family: 'PT Sans', sans-serif;
+    color: $pallete-fonts;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media (max-width: 1140px) {
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 1.2rem;
+    }
+}
+
+@mixin title-h4 {
+    color: $pallete-fonts;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media (max-width: 1140px) {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+
+@mixin button ($size, $border-radius) {
+
+    &:hover {
+        opacity: 0.9;
+        box-shadow: 0 0 0 0.2rem #ca583e52;
+    }
+
+
+    box-shadow: 20px 20px 40px #d3dbe6,
+    -20px -20px 40px #ffffff,
+    -1px -1px 1px rgba(255, 255, 255, 0.6);
+    border-radius: $border-radius;
+    border: 1px solid $pallete-secondary;
+    background-color: $pallete-secondary;
+    padding: 0.9rem 1.56rem;
+    color: $pallete-background;
+    font-family: 'PT Sans', sans-serif;
+    font-size: $size;
+
+    @media (max-width: 1140px) {
+        font-size: $size*1;
+    }
+
+    @media (max-width:768px) {
+        font-size: $size*0.8;
+    }
+
+    @media (max-width: 375px) {
+        font-size: $size*0.5;
+    }
+
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@mixin shadow($base, $up, $down) {
+    box-shadow: -0.24109px -0.24109px 0.24109px $base, 
+                -4.8218px -4.8218px 9.64361px $up, 
+                4.8218px 4.8218px 9.64361px $down;
+}
+
+button.active {
+    background: $pallete-secondary;
+    color: $pallete-background;
+    border: 1px solid $pallete-secondary;
+}
