@@ -1,7 +1,7 @@
 {
-  "name": "chaivyruchai",
+  "name": "basis-html-box",
   "version": "1.0.0",
-  "description": "ChaiVyruchai - contactless tip payment system",
+  "description": "Basis template for site building",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -48,7 +48,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DotikDeveloper/ChaiVyruchai.git"
+    "url": "git+https://github.com/DotikDeveloper/basis-html-box.git"
   },
   "keywords": [
     "js",
@@ -59,7 +59,7 @@
     "webpack"
   ],
   "bugs": {
-    "url": "https://github.com/DotikDeveloper/ChaiVyruchai/issues"
+    "url": "https://github.com/DotikDeveloper/basis-html-box/issues"
   },
-  "homepage": "https://github.com/DotikDeveloper/ChaiVyruchai#readme"
+  "homepage": "https://github.com/DotikDeveloper/basis-html-box#readme"
 }
